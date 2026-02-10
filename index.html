@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ডেমো ওয়েবসাইট</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>আমার ডেমো ওয়েবসাইট</h1>
+            <ul>
+                <li><a href="#home">হোম</a></li>
+                <li><a href="#about">আমার সম্পর্কে</a></li>
+                <li><a href="#projects">প্রজেক্ট</a></li>
+                <li><a href="#contact">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>স্বাগতম!</h2>
+        <p>আমি একজন ওয়েব ডেভেলপার এবং এটি আমার সুন্দর ডেমো ওয়েবসাইট।</p>
+        <button id="greetBtn">আমাকে শুভেচ্ছা জানান</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>আমার সম্পর্কে</h2>
+        <p>আমি HTML, CSS, এবং JavaScript দিয়ে ওয়েবসাইট তৈরি করি। আমার লক্ষ্য হলো সুন্দর ও রেসপন্সিভ ডিজাইন করা।</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>আমার প্রজেক্ট</h2>
+        <div class="project-card">
+            <h3>প্রজেক্ট ১</h3>
+            <p>এই প্রজেক্টটি হলো একটি ডেমো পোর্টফোলিও ওয়েবসাইট।</p>
+        </div>
+        <div class="project-card">
+            <h3>প্রজেক্ট ২</h3>
+            <p>এই প্রজেক্টটি হলো একটি ইন্টারেক্টিভ ওয়েব অ্যাপ।</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>যোগাযোগ করুন</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="আপনার নাম" required>
+            <input type="email" placeholder="আপনার ইমেইল" required>
+            <textarea placeholder="আপনার বার্তা" required></textarea>
+            <button type="submit">পাঠান</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 আমার ডেমো ওয়েবসাইট | তৈরি করেছেন Had Al Imran S</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('greetBtn').addEventListener('click', function() {
+            alert('শুভেচ্ছা! ওয়েবসাইটে স্বাগতম!');
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('আপনার বার্তা পাঠানো হয়েছে!');
+        });
+    </script>
+</body>
+</html>
